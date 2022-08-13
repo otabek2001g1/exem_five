@@ -5,6 +5,7 @@ import 'package:exem_five/exem/destop.dart';
 
 import 'package:exem_five/exem/first.dart';
 import 'package:exem_five/exem/second.dart';
+import 'package:exem_five/exem/splash.dart';
 import 'package:exem_five/exem/taskList.dart';
 import 'package:exem_five/pacage/paper.dart';
 import 'package:exem_five/ui/burger.dart';
@@ -33,9 +34,10 @@ class MyApp extends StatelessWidget {
         "/second": (context) => const SecongPage(),
         "/bonila": (context) => const Bonila(),
         "/desctop": (context) => const Desctop(),
-        "/Task": (context) => const TaskList()
+        "/Task": (context) => const TaskList(),
+        "/splash": (context) => const Splash()
       },
-      home: const SecongPage(),
+      home: const Splash(),
     );
   }
 }

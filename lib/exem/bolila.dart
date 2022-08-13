@@ -12,6 +12,13 @@ class Bonila extends StatefulWidget {
 }
 
 class _BonilaState extends State<Bonila> {
+  late Size _size;
+  @override
+  void didChangeDependencies() {
+    _size = MediaQuery.of(context).size;
+    super.didChangeDependencies();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -180,7 +187,7 @@ class _BonilaState extends State<Bonila> {
                 ],
               ),
               SizedBox(
-                height: 400,
+                height: _size.height / 3,
               ),
               InkWell(
                 onTap: () {
